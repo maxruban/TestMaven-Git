@@ -157,7 +157,7 @@ public class TestMaven3 {
 		drvr.click();
 		WebElement next1 = driver.findElement(By.xpath("//li/a[@ng-click='wizard.go(3)'][text()='Next']"));
 		next1.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		WebElement tatoos = driver.findElement(By.xpath("//label/input[@ng-model='wizard.report.tattoos']"));
 		tatoos.click();
 		WebElement tatoosText = driver.findElement(By.xpath("//input[@name='Tattoos']"));
@@ -235,7 +235,7 @@ public class TestMaven3 {
 		employersTelephone.sendKeys(hh);
 		WebElement next3 = driver.findElement(By.xpath("//li/a[@ng-click='wizard.go(5)'][text()='Next']"));
 		next3.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		WebElement gangUnit = driver.findElement(By.xpath("//label[text()='Robbery']"));
 		gangUnit.click();
 		WebElement stopReason = driver.findElement(By.xpath("//input[@name='reasonForStop']"));
@@ -284,10 +284,10 @@ public class TestMaven3 {
 		vehicleOdd.sendKeys(uu);
 		WebElement next5 = driver.findElement(By.xpath("//li/a[@ng-click='wizard.go(7)'][text()='Next']"));
 		next5.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		WebElement next6 = driver.findElement(By.xpath("//li/a[@ng-click='wizard.go(8)'][text()='Next']"));
 		next6.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		WebElement publishReport = driver.findElement(By.xpath("//button[@ng-click='wizard.commitReport()']"));
 		publishReport.click();
 		WebElement publishConfirm = driver.findElement(By.xpath("//button[@ng-click='confirm()']"));
@@ -296,7 +296,7 @@ public class TestMaven3 {
 
 		WebElement reports = driver.findElement(By.xpath("//span[text()='Reports']"));
 		reports.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		WebElement lastReport = driver.findElement(By.xpath("//tbody/tr[1]/td/div/a/img"));
 		lastReport.click();
 		Thread.sleep(2000);
