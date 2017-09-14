@@ -9,7 +9,7 @@ import org.testng.Assert;
 
 public class TestMaven3 {
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "/Users/maxruban/Desktop/chromedriver2");
+		System.setProperty("webdriver.chrome.driver", "/tmp/chromedriver2");
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
