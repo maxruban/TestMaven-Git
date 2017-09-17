@@ -67,7 +67,7 @@ public class TestMaven3 {
 		suspect.put("Vehicle Year", "2013");
 		suspect.put("Vehicle Color", "Black");
 		suspect.put("Vehicle Oddities", "N/A");
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		WebElement loginField = driver.findElement(By.xpath("//*[@id='exampleInputEmail1']"));
 		loginField.sendKeys(emailLogin);
 		WebElement passwordField = driver.findElement(By.xpath("//*[@id='exampleInputPassword1']"));
@@ -284,10 +284,10 @@ public class TestMaven3 {
 		vehicleOdd.sendKeys(uu);
 		WebElement next5 = driver.findElement(By.xpath("//li/a[@ng-click='wizard.go(7)'][text()='Next']"));
 		next5.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		WebElement next6 = driver.findElement(By.xpath("//li/a[@ng-click='wizard.go(8)'][text()='Next']"));
 		next6.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		WebElement publishReport = driver.findElement(By.xpath("//button[@ng-click='wizard.commitReport()']"));
 		publishReport.click();
 		WebElement publishConfirm = driver.findElement(By.xpath("//button[@ng-click='confirm()']"));
@@ -299,7 +299,7 @@ public class TestMaven3 {
 		Thread.sleep(3000);
 		WebElement lastReport = driver.findElement(By.xpath("//tbody/tr[1]/td/div/a/img"));
 		lastReport.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		WebElement subjectInfo = driver.findElement(By.xpath("//*[@id='reportBody']/div[1]/div/p"));
 		String reportTitle = subjectInfo.getText();
 		Assert.assertEquals(reportTitle, "Subject Information");
