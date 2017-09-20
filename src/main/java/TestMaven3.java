@@ -12,8 +12,8 @@ public class TestMaven3 {
 		System.setProperty("webdriver.chrome.driver", "/tmp/chromedriver2");
 		
 		WebDriver driver = new ChromeDriver();
-		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(90, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	
 		String emailLogin = "zzzmmm@mailinator.com";
 		String password = "zzzzzz";
